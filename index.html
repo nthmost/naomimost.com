@@ -176,6 +176,18 @@
       color: var(--accent);
     }
 
+    .photo-wrap {
+      margin-top: 3rem;
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 480px;
+      display: block;
+      filter: sepia(0.2) contrast(1.05);
+      border-left: 3px solid var(--border);
+    }
+
     @media (max-width: 600px) {
       .masthead { flex-direction: column; gap: 0.4rem; }
       .masthead h1 { font-size: 1.5rem; }
@@ -257,6 +269,10 @@
   <div class="section-label">Elsewhere</div>
 
   <p class="elsewhere">This is the professional window. For where I'm actually alive and operating — projects, writing, art, hardware, community work — go to <a href="https://nthmost.com">nthmost.com</a>.</p>
+
+  <div class="photo-wrap">
+    <img src="https://naomimost.com/media/naomi-mono.jpeg" alt="Naomi Most at Mono Lake" class="portrait">
+  </div>
 
 </div>
 </body>
