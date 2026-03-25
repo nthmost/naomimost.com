@@ -178,6 +178,8 @@
 
     .photo-wrap {
       margin-top: 3rem;
+      display: flex;
+      justify-content: center;
     }
 
     .portrait {
@@ -185,7 +187,10 @@
       max-width: 480px;
       display: block;
       filter: sepia(0.2) contrast(1.05);
-      border-left: 3px solid var(--border);
+      border: 3px solid var(--accent);
+      padding: 8px;
+      background: var(--bg2);
+      box-shadow: 0 0 24px rgba(90, 158, 106, 0.15);
     }
 
     @media (max-width: 600px) {
