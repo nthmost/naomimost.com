@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naomi Most</title>
+  <meta name="description" content="Naomi Most — building systems that weren't there yet, fixing ones that had stopped working.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #edddb8;
+      --muted: #c0a878;
+      --accent: #5a9e6a;
+      --bg: #0e0c09;
+      --bg2: #171410;
+      --border: #2a2318;
+      --max: 740px;
+      --mono: 'Courier New', Courier, monospace;
+    }
+
+    body {
+      font-family: var(--mono);
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0 1.5rem;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 0 6rem;
+    }
+
+    /* masthead */
+    .masthead {
+      border-top: 6px solid var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 0;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+    }
+
+    .masthead h1 {
+      font-family: var(--mono);
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      line-height: 1;
+      color: #e8d0a0;
+      text-shadow: 0 0 18px rgba(210, 170, 80, 0.35);
+    }
+
+    .masthead .tagline {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* intro */
+    .intro {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* section label */
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.2rem;
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    /* cases */
+    .case {
+      margin-bottom: 2rem;
+      padding-left: 1.2rem;
+      border-left: 3px solid var(--border);
+    }
+
+    .case strong {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    /* bio */
+    .bio {
+      margin-bottom: 1.2rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* writing */
+    .writing-list {
+      list-style: none;
+    }
+
+    .writing-list li {
+      margin-bottom: 1.2rem;
+      padding-left: 1.2rem;
+      border-left: 3px solid var(--border);
+    }
+
+    .writing-list a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .writing-list a:hover {
+      color: var(--accent);
+    }
+
+    .writing-list span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
+    }
+
+    /* contact */
+    .contact {
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .masthead { flex-direction: column; gap: 0.4rem; }
+      .masthead h1 { font-size: 1.5rem; }
+      body { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <h1>Naomi Most</h1>
+    <span class="tagline">Systems Thinker &nbsp;/&nbsp; Builder &nbsp;/&nbsp; Fixer</span>
+  </div>
+
+  <p class="intro">Some problems look like technical problems. Some look like people problems. The interesting ones are both, and the people inside them usually can't tell which is which.</p>
+
+  <p class="intro">I've spent 25 years building tools, fixing systems, and walking into situations where something is genuinely broken and the standard approaches haven't worked.</p>
+
+  <div class="section-label">Selected Work</div>
+
+  <div class="case">
+    <strong>Illuminate</strong>
+    Genetic sequencing labs were generating quality metrics they couldn't actually use. Illumina's software trapped the data behind a Windows interface with no programmatic access — not even copy-paste. I reverse-engineered their formats and built a Python library that made the data accessible. It's now in use at the CDC's bacterial sequencing lab.
+  </div>
+
+  <div class="case">
+    <strong>Streamlit</strong>
+    As one of the first six engineers, I rewrote the caching and media streaming engines and led the shift to sprint-based continuous delivery. Streamlit went on to become one of the most widely used data application frameworks in the world.
+  </div>
+
+  <div class="case">
+    <strong>Noisebridge</strong>
+    In 2014, San Francisco's anarchist hackerspace was in crisis — governance had collapsed and the space was facing potential shutdown. I diagnosed the failure modes, facilitated the reboot, and helped build the governance structures that stabilized it. The space is still running.
+  </div>
+
+  <div class="case">
+    <strong>Metapub</strong>
+    Searching biomedical literature and connecting results to actual papers and ontology concepts was fragmented and painful. I built the toolkit that unified it. It's been cited in published research papers across multiple institutions.
+  </div>
+
+  <div class="case">
+    <strong>Gaeilge Quest</strong>
+    Irish language learners had textbooks but no comprehensive, freely accessible grammar reference. I built one by hand — covering A1–B2 across four dialects — at <a href="https://gaeilge.quest">gaeilge.quest</a>.
+  </div>
+
+  <div class="section-label">Background</div>
+
+  <p class="bio">My grandmother, Kay McNulty, was one of the six women who programmed ENIAC in 1945 — the first general-purpose electronic computer. My grandfather, John W. Mauchly, co-invented it. Kay invented what the word "programmer" would come to mean, before the word existed. I've spent my career working in the tradition they didn't know they were starting: building systems that weren't there yet, fixing ones that had stopped working, and documenting what gets lost when nobody does.</p>
+
+  <p class="bio">I'm currently writing <em>The Circuit Loom</em>, an essay on computing, language, and what the Irish word <em>ríomh</em> — to weave, to compute, to narrate — tells us about all three.</p>
+
+  <div class="section-label">How I Think About Things</div>
+
+  <ul class="writing-list">
+    <li>
+      <a href="https://nthmost.com/w/vikings/">The Book of noísbriḋ</a>
+      <span>On bot scraping, community wikis, and why giving raiders the database might be smarter than defending the walls.</span>
+    </li>
+    <li>
+      <a href="https://nthmost.substack.com/p/a-supposedly-fun-bureaucracy-ill">A Supposedly Fun Bureaucracy I'll Never Line Up For Again</a>
+      <span>On institutions that absorb the language of their own critique without actually changing.</span>
+    </li>
+  </ul>
+
+  <div class="section-label">Contact</div>
+
+  <p class="contact">Available for consulting engagements involving systems that are broken in ways that are hard to name.<br><br>
+  <a href="mailto:naomi@nthmost.com">naomi@nthmost.com</a></p>
+
+</div>
+</body>
+</html>
